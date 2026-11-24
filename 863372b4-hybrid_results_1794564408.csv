@@ -1,0 +1,17 @@
+policy,scheme,setup_ms,keygen_ms,enc_ms,dec_ms,ct_bytes,decrypt_ok,wrong_user_rejected
+L1_full_twin,TKN20,24.7,120.2,62.245,27.355,4675,yes,yes
+L2_clinical,TKN20,24.7,141.0,86.356,23.096,4673,yes,yes
+L3_xr_data,TKN20,24.7,117.7,79.925,21.995,4681,yes,yes
+L4_device_data,TKN20,24.7,99.2,81.188,25.962,4677,yes,yes
+L5_xr_view,TKN20,24.7,175.3,104.705,23.166,5025,yes,yes
+L6_vitals,TKN20,24.7,125.9,86.794,21.604,5023,yes,yes
+H_L2_clinical,TKN20,24.7,166.1,88.892,23.031,5037,yes,yes
+H_L3_xr_data,TKN20,24.7,137.2,72.376,20.277,5045,yes,yes
+H_L4_device_data,TKN20,24.7,187.1,91.221,21.857,5041,yes,yes
+H_L5_xr_view,TKN20,24.7,213.3,112.142,32.490,5759,yes,yes
+H_L6_vitals,TKN20,24.7,196.9,126.781,26.923,5753,yes,yes
+C_L2_two_ctx,TKN20,24.7,150.4,96.461,36.742,5025,yes,yes
+C_L2_four_ctx,TKN20,24.7,154.1,104.506,22.601,5729,yes,yes
+C_L5_two_ctx,TKN20,24.7,136.9,96.773,26.271,5377,yes,yes
+R_L2_after_rev,TKN20,24.7,142.9,72.129,21.439,4673,yes,yes
+ALL_4groups,TKN20,24.7,154.6,103.625,40.203,5029,yes,yes

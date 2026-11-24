@@ -1,0 +1,49 @@
+policy,scheme,setup_ms,keygen_ms,enc_ms,dec_ms,ct_bytes,decrypt_ok,wrong_user_rejected
+AC17 Decryption failed: Error: Error in cp_decrypt: attributes in SK do not match policy in CT.
+L1_full_twin,AC17_FAME,46.5,33.9,47.067,30.264,10895,yes,yes
+AC17 Decryption failed: Error: Error in cp_decrypt: attributes in SK do not match policy in CT.
+L2_clinical,AC17_FAME,46.5,34.1,46.251,30.522,10889,yes,yes
+AC17 Decryption failed: Error: Error in cp_decrypt: attributes in SK do not match policy in CT.
+L3_xr_data,AC17_FAME,46.5,34.2,48.753,31.720,10908,yes,yes
+AC17 Decryption failed: Error: Error in cp_decrypt: attributes in SK do not match policy in CT.
+L4_device_data,AC17_FAME,46.5,33.1,47.963,30.783,10911,yes,yes
+AC17 Decryption failed: Error: Error in cp_decrypt: attributes in SK do not match policy in CT.
+L5_xr_view,AC17_FAME,46.5,41.0,53.229,31.157,11754,yes,yes
+AC17 Decryption failed: Error: Error in cp_decrypt: attributes in SK do not match policy in CT.
+L6_vitals,AC17_FAME,46.5,41.4,52.116,30.641,11770,yes,yes
+AC17 Decryption failed: Error: Error in cp_decrypt: attributes in SK do not match policy in CT.
+H_L2_clinical,AC17_FAME,46.5,40.8,53.876,31.165,11747,yes,yes
+AC17 Decryption failed: Error: Error in cp_decrypt: attributes in SK do not match policy in CT.
+H_L3_xr_data,AC17_FAME,46.5,42.2,53.854,30.450,11754,yes,yes
+AC17 Decryption failed: Error: Error in cp_decrypt: attributes in SK do not match policy in CT.
+H_L4_device_data,AC17_FAME,46.5,41.0,52.573,30.076,11754,yes,yes
+AC17 Decryption failed: Error: Error in cp_decrypt: attributes in SK do not match policy in CT.
+H_L5_xr_view,AC17_FAME,46.5,54.0,64.983,31.531,13430,yes,yes
+AC17 Decryption failed: Error: Error in cp_decrypt: attributes in SK do not match policy in CT.
+H_L6_vitals,AC17_FAME,46.5,54.9,66.002,31.314,13414,yes,yes
+AC17 Decryption failed: Error: Error in cp_decrypt: attributes in SK do not match policy in CT.
+C_L2_two_ctx,AC17_FAME,46.5,40.9,53.429,31.824,11758,yes,yes
+AC17 Decryption failed: Error: Error in cp_decrypt: attributes in SK do not match policy in CT.
+C_L2_four_ctx,AC17_FAME,46.5,57.7,64.532,31.684,13391,yes,yes
+AC17 Decryption failed: Error: Error in cp_decrypt: attributes in SK do not match policy in CT.
+C_L5_two_ctx,AC17_FAME,46.5,49.5,59.512,32.463,12554,yes,yes
+AC17 Decryption failed: Error: Error in cp_decrypt: attributes in SK do not match policy in CT.
+R_L2_after_rev,AC17_FAME,46.5,35.0,46.690,32.066,10990,yes,yes
+AC17 Decryption failed: Error: Error in cp_decrypt: attributes in SK do not match policy in CT.
+ALL_4groups,AC17_FAME,46.5,41.3,58.498,30.952,11752,yes,yes
+L1_full_twin,TKN20,20.9,75.4,48.728,17.613,4675,yes,yes
+L2_clinical,TKN20,20.9,75.6,50.118,17.980,4673,yes,yes
+L3_xr_data,TKN20,20.9,76.1,49.314,18.267,4681,yes,yes
+L4_device_data,TKN20,20.9,78.4,47.581,18.646,4677,yes,yes
+L5_xr_view,TKN20,20.9,90.1,56.904,17.601,5025,yes,yes
+L6_vitals,TKN20,20.9,92.0,57.366,18.364,5023,yes,yes
+H_L2_clinical,TKN20,20.9,91.5,57.201,18.372,5037,yes,yes
+H_L3_xr_data,TKN20,20.9,95.5,59.268,18.545,5045,yes,yes
+H_L4_device_data,TKN20,20.9,94.6,58.716,18.020,5041,yes,yes
+H_L5_xr_view,TKN20,20.9,130.8,74.843,21.540,5759,yes,yes
+H_L6_vitals,TKN20,20.9,126.1,73.165,20.441,5753,yes,yes
+C_L2_two_ctx,TKN20,20.9,96.4,59.155,18.819,5025,yes,yes
+C_L2_four_ctx,TKN20,20.9,131.2,74.540,20.783,5729,yes,yes
+C_L5_two_ctx,TKN20,20.9,123.7,67.777,19.730,5377,yes,yes
+R_L2_after_rev,TKN20,20.9,77.4,49.281,17.856,4673,yes,yes
+ALL_4groups,TKN20,20.9,105.4,58.828,18.981,5029,yes,yes

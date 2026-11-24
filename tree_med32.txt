@@ -1,0 +1,25 @@
+# tree_med32.txt -- Medical-Metaverse tree, grouping BY LEAF TYPE: one group per type, 8 positions each.
+#   group0 = roles | group1 = Valid values | group2 = Ctx values | group3 = Emerg   (unused positions are spares)
+ELL 32
+GROUPS 4
+ATTRS CONSULTANT CLINICIAN XR_PARTICIPANT DEVICE_STAFF OBSERVER MONITOR ROLE_SPARE1 ROLE_SPARE2 VALID_v3r2 VALID_v3r3 VALID_v1r0 VALID_v2r1 VALID_v4r0 VALID_v4r1 VALID_v5r0 VALID_v5r1 CTX_A CTX_B CTX_C CTX_D CTX_E CTX_F CTX_G CTX_H EMERG EMERG_SPARE1 EMERG_SPARE2 EMERG_SPARE3 EMERG_SPARE4 EMERG_SPARE5 EMERG_SPARE6 EMERG_SPARE7
+# ---- A. the six policies exactly as written (hierarchy handled at key issuance: a consultant key holds the lower roles too)
+POLICY L1_full_twin     : CONSULTANT AND VALID_v3r2 AND CTX_A
+POLICY L2_clinical      : CLINICIAN AND VALID_v3r2 AND CTX_A
+POLICY L3_xr_data       : XR_PARTICIPANT AND VALID_v3r2 AND CTX_A
+POLICY L4_device_data   : DEVICE_STAFF AND VALID_v3r2 AND CTX_A
+POLICY L5_xr_view       : EMERG OR (OBSERVER AND VALID_v3r2 AND CTX_A)
+POLICY L6_vitals        : EMERG OR (MONITOR AND VALID_v3r2 AND CTX_A)
+# ---- B. same tree with the hierarchy written INTO the policy (higher level also opens the lower one)
+POLICY H_L2_clinical    : (CONSULTANT OR CLINICIAN) AND VALID_v3r2 AND CTX_A
+POLICY H_L3_xr_data     : (CONSULTANT OR XR_PARTICIPANT) AND VALID_v3r2 AND CTX_A
+POLICY H_L4_device_data : (CONSULTANT OR DEVICE_STAFF) AND VALID_v3r2 AND CTX_A
+POLICY H_L5_xr_view     : EMERG OR ((CONSULTANT OR XR_PARTICIPANT OR OBSERVER) AND VALID_v3r2 AND CTX_A)
+POLICY H_L6_vitals      : EMERG OR ((CONSULTANT OR DEVICE_STAFF OR MONITOR) AND VALID_v3r2 AND CTX_A)
+# ---- C. more than one allowed context (the Ctx leaf repeated with another value)
+POLICY C_L2_two_ctx     : CLINICIAN AND VALID_v3r2 AND (CTX_A OR CTX_B)
+POLICY C_L2_four_ctx    : CLINICIAN AND VALID_v3r2 AND (CTX_A OR CTX_B OR CTX_C OR CTX_D)
+POLICY C_L5_two_ctx     : EMERG OR (OBSERVER AND VALID_v3r2 AND (CTX_A OR CTX_B))
+# ---- D. after a revocation the Valid leaf carries the new counter (v3.r3), the files are re-encrypted
+POLICY R_L2_after_rev   : CLINICIAN AND VALID_v3r3 AND CTX_A
+POLICY ALL_4groups   : CONSULTANT AND VALID_v3r2 AND CTX_A AND EMERG

@@ -1,0 +1,17 @@
+policy,scheme,setup_ms,keygen_ms,enc_ms,dec_ms,ct_bytes,decrypt_ok,wrong_user_rejected
+L1_full_twin,AC17_FAME,62.6,70.4,72.347,45.331,10910,yes,yes
+L2_clinical,AC17_FAME,62.6,41.0,85.778,34.463,10936,yes,yes
+L3_xr_data,AC17_FAME,62.6,54.5,85.621,34.665,10948,yes,yes
+L4_device_data,AC17_FAME,62.6,42.1,77.319,47.383,10911,yes,yes
+L5_xr_view,AC17_FAME,62.6,80.7,79.197,47.105,11716,yes,yes
+L6_vitals,AC17_FAME,62.6,72.2,88.856,60.868,11758,yes,yes
+H_L2_clinical,AC17_FAME,62.6,81.9,68.005,64.098,11765,yes,yes
+H_L3_xr_data,AC17_FAME,62.6,59.0,72.034,46.066,11802,yes,yes
+H_L4_device_data,AC17_FAME,62.6,80.0,89.779,48.456,11729,yes,yes
+H_L5_xr_view,AC17_FAME,62.6,92.4,108.788,40.073,13392,yes,yes
+H_L6_vitals,AC17_FAME,62.6,95.8,115.386,57.900,13423,yes,yes
+C_L2_two_ctx,AC17_FAME,62.6,74.9,109.944,60.919,11748,yes,yes
+C_L2_four_ctx,AC17_FAME,62.6,74.0,83.136,40.262,13346,yes,yes
+C_L5_two_ctx,AC17_FAME,62.6,61.5,100.043,54.727,12556,yes,yes
+R_L2_after_rev,AC17_FAME,62.6,75.7,63.057,42.957,10917,yes,yes
+ALL_4groups,AC17_FAME,62.6,60.2,75.323,59.382,11752,yes,yes
